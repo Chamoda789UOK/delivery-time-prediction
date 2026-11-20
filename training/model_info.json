@@ -1,0 +1,24 @@
+{
+  "model_version": "1.0.0",
+  "training_date": "2026-11-19",
+  "dataset": "Amazon Delivery Dataset (Kaggle), 39958 rows after cleaning",
+  "target": "Delivery_Time (minutes)",
+  "features": [
+    "Agent_Age",
+    "Agent_Rating",
+    "Weather",
+    "Traffic",
+    "Vehicle",
+    "Area",
+    "Category",
+    "distance_km",
+    "order_hour",
+    "day_of_week"
+  ],
+  "architecture": "Dense 128-64-32 ReLU, 1 linear output, Adam lr 0.001, MSE loss",
+  "metrics": {
+    "mae": 17.91,
+    "rmse": 22.99,
+    "r2": 0.808
+  }
+}
